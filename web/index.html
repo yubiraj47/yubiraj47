@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GateRankInsight</title>
+    <link rel="icon" href="logo7.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+    
+        <h1>GateRankInsight</h1>
+        <p>Your resource for GATE opening and closing ranks!</p>
+    </header>
+    
+
+    <main>
+        <section class="search-section">
+            <h2>Search GATE Ranks</h2>
+            <form id="searchForm">
+                <label for="year">Select Year:</label>
+                <select id="year" name="year">
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+
+                <label for="branch">Select Branch:</label>
+                <select id="branch" name="branch">
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="ME">ME</option>
+                    <option value="CE">CE</option>
+                    <option value="EE">EE</option>
+                </select>
+
+                <label for="categoryType">Select Institute Type:</label>
+                <select id="categoryType" name="categoryType">
+                    <option value="IIT">IITs</option>
+                    <option value="NIT">NITs</option>
+                    <option value="PSU">PSUs</option>
+                </select>
+
+                <label for="reservation">Select Reservation Category:</label>
+                <select id="reservation" name="reservation">
+                    <option value="General">General</option>
+                    <option value="OBC">OBC</option>
+                    <option value="EWS">EWS</option>
+                    <option value="SC">SC</option>
+                    <option value="ST">ST</option>
+                </select>
+
+                <button type="submit">Get Data</button>
+            </form>
+        </section>
+
+        <section id="results" class="results">
+            <h2>Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Institute/Organization</th>
+                        <th>Category</th>
+                        <th>Opening Rank</th>
+                        <th>Closing Rank</th>
+                    </tr>
+                </thead>
+                <tbody id="resultTable">
+                    <!-- Data will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+        <!-- About Us Section -->
+     <!-- About Us Section -->
+<section id="about-us">
+    <div class="about-content">
+        <h2>About Us</h2>
+        <p>Welcome to GateRankInsight! We provide the prediction based data on the GATE exam opening and closing ranks for IITs, NITs, PSUs, and more. Our mission is to help GATE aspirants make informed decisions regarding their college choices based on previous year trends. Our platform is user-friendly, offering data categorized by year, branch, and category (General, OBC, EWS, SC, ST), enabling a personalized experience.</p>
+        <p>We aim to make your GATE preparation journey smoother and more predictable by providing transparent and reliable data. Join us today to stay ahead of the competition!</p>
+        
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p><strong>Email:</strong> <a href="mailto:yubiraj43@gmail.com">yubiraj43@gmail.com</a></p>
+            <p><strong>Phone:</strong> +91 7488518120</p>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 GateRankInsight. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

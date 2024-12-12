@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #eef2f3, #8e9eab);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background: linear-gradient(135deg, #003366, #0055a5);
+    color: white;
+    padding: 30px 0;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Search Section */
+.search-section {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #0055a5;
+}
+
+.search-section form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.search-section label {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.search-section select, 
+.search-section button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-section select {
+    background: white;
+}
+
+.search-section button {
+    background: linear-gradient(135deg, #0055a5, #0077cc);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background: linear-gradient(135deg, #003366, #0055a5);
+    transform: scale(1.05);
+}
+
+/* Results Section */
+.results {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.results h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #003366;
+}
+
+.results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.results th, 
+.results td {
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+}
+
+.results th {
+    background: linear-gradient(135deg, #003366, #0055a5);
+    color: white;
+}
+
+.results tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.results tr:hover {
+    background-color: #eef2f3;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: linear-gradient(135deg, #003366, #0055a5);
+    color: white;
+    padding: 15px 0;
+    font-size: 0.9em;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-section form {
+        flex-direction: column;
+    }
+
+    .search-section select, 
+    .search-section button {
+        width: 100%;
+    }
+
+    .results table {
+        font-size: 0.9em;
+    }
+}
+/* About Us Section */
+/* About Us Section */
+#about-us {
+    background-color: #f2f2f2; /* Light background color */
+    padding: 40px 20px; /* Space around the content */
+    text-align: center; /* Center the text */
+    font-family: 'Arial', sans-serif; /* Font style */
+    margin-top: 40px; /* Space between the content above */
+}
+
+#about-us h2 {
+    font-size: 30px;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#about-us p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555; /* Medium text color */
+    max-width: 800px; /* Limit the width of text */
+    margin: 0 auto; /* Center the text */
+}
+
+#about-us p:last-of-type {
+    margin-bottom: 0; /* Remove margin from the last paragraph */
+}
+
+#about-us .about-content {
+    background-color: #fff; /* White background for the content box */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+    width: 90%;
+    max-width: 1000px; /* Maximum width for large screens */
+    margin: 0 auto; /* Centering the content */
+}
+
+/* Contact Information */
+#about-us .contact-info {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e0f7fa; /* Light blue background */
+    border-radius: 8px;
+}
+
+#about-us .contact-info h3 {
+    font-size: 24px;
+    color: #333; /* Dark text for the header */
+    margin-bottom: 10px;
+}
+
+#about-us .contact-info p {
+    font-size: 16px;
+    color: #555; /* Medium text color */
+    margin: 5px 0; /* Space between each line */
+}
+
+#about-us .contact-info a {
+    color: #00796b; /* Dark green color for links */
+    text-decoration: none;
+}
+
+#about-us .contact-info a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+/* Header Styling */
+
+
